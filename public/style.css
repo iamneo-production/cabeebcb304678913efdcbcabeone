@@ -28,8 +28,9 @@ body {
 
 .row {
   display: flex;
+  justify-content: center;
   height: 5vh;
-  width: 12vw;
+  width: 50px;
 }
 
 
