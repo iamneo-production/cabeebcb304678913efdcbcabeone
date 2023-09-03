@@ -51,8 +51,12 @@ body {
 }
 
 .btn:hover {
-  background-color: whitesmoke;
+  background-color: rgb(232, 232, 232);
   cursor: pointer;
+}
+
+.disable-btn {
+  cursor: no-drop;
 }
 
 .result-container {
@@ -63,8 +67,14 @@ body {
   color: black;
   border: solid black 0.5px;
   border-radius: 5px;
+}
+
+.result {
   
 }
 
+#reset {
+  text-align: center;
+}
 
 /* Enter your styling here */
