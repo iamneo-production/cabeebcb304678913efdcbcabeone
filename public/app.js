@@ -23,47 +23,24 @@ const ticTacToe = (btn, index) => {
 
         for (const condition of conditions) {
             const [a, b, c] = condition;
-            if (cells[a] && cells[a] === cells[b] && cells[a] === cells[c])
+            if (cells[a] && cells[a] === cells[b] && cells[a] === cells[c]) {
+                result.textContent = `Player ${currentPlayer} Won`;
+                btns.forEach(btn => btn.disabled = true);
+                return;
+            }
         }
+
+        currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        result.textContent = `Player ${currentPlayer} Turn`;
     }
 
-    /*
-    **Part 1: Winning Conditions (Add your code here)**
-
-    1. Implement the logic to check for winning conditions using the 'conditions' array.
-    2. Display a winning message in the 'result' element when a player wins.
-    3. Disable all buttons after a win.
-    */
-
-    // Your code to update the game state and check for a win
-    // ...
-
-    // Your code to display the current player's turn
-    result.textContent = `Player ${currentPlayer} Turn`;
-
-    // Your code to handle button and cell interactions
-    // ...
 };
-
-    /*
-    **Part 2: Reset Function (Add your code here)**
-
-    1. Implement a new function that resets the game to its initial state.
-    2. Ensure the 'cells', 'btns', and 'currentPlayer' variables are reset.
-    3. Update the 'result' element to indicate the current player's turn.
-    4. Re-enable all buttons for a new game.
-    */
 
 // Function to reset the game
 const resetGame = () => {
-    // Your code to reset the game state
-    // ...
-
-    // Your code to update the 'result' element
-    // ...
-
-    // Your code to re-enable buttons
-    // ...
+    cells = ['', '', '', '', '', '', '', '', ''];
+    currentPlayer = 'X';
+    result.textContent = 'Player X Turn';
 };
 
 btns.forEach((btn, i) => {
