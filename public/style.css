@@ -23,8 +23,16 @@ body {
 }
 
 .box {
-  background-color: white;
+  display: flex;
+
 }
+
+.row {
+  height: 10px;
+  width: 10px;
+}
+
+
 
 .result-container {
   background-color: rgba(255, 255, 255, 0.6);
