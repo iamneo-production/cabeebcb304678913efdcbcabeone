@@ -1,8 +1,8 @@
 // Initial game state
 let cells = ['', '', '', '', '', '', '', '', ''];
 let currentPlayer = 'X';
-let result = document.querySelector('.result');
-let btns = document.querySelectorAll('.btn');
+let result = document.getElementsByClassName('result');
+let btns = document.getElementsByClassName('btn');
 let conditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -14,6 +14,8 @@ let conditions = [
     [2, 4, 6]
 ];
 
+console.log(result);
+console.log(btns);
 // Function to handle player moves
 const ticTacToe = (element, index) => {
     // Your game logic here
