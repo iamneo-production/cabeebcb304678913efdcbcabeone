@@ -37,12 +37,22 @@ body {
 }
 
 .btn {
-  background-color: rgba(215, 215, 215, 0.8);
+  background-color: rgba(215, 215, 215, 0.9);
   border: solid black 0.5px;
   border-radius: 4px;
   height: 75px;
   width: 75px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: black;
+  text-shadow: black 2px;
 
+}
+
+.btn:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
 }
 
 .result-container {
