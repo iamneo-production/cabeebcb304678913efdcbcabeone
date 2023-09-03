@@ -9,5 +9,9 @@ body {
     font-family: "Radio Canada", sans-serif;
     color: white;
   }
-  
+
+
+#header {
+  text-align: center;
+}
 /* Enter your styling here */
