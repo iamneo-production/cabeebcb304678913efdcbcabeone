@@ -23,10 +23,10 @@ body {
 }
 
 .box {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  direction: column;
+  direction: column; */
   margin: 35px;
 }
 
@@ -36,13 +36,14 @@ body {
   align-items: center;
 }
 
-
-
-/* 
 .btn {
-  background-color: rgba(255, 255, 255, 0.6);
-  
-} */
+  background-color: rgba(215, 215, 215, 0.8);
+  border: solid black 0.5px;
+  border-radius: 4px;
+  height: 75px;
+  width: 75px;
+
+}
 
 .result-container {
   background-color: rgba(255, 255, 255, 0.6);
