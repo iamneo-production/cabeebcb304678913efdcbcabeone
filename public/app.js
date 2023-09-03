@@ -14,11 +14,13 @@ let conditions = [
     [2, 4, 6]
 ];
 
-console.log(result);
-console.log(btns);
+// console.log(result);
+// console.log(btns);
 // Function to handle player moves
 const ticTacToe = (element, index) => {
-    // Your game logic here
+    for (const btn of btns) {
+        console.log(btn);
+    }
 
     /*
     **Part 1: Winning Conditions (Add your code here)**
