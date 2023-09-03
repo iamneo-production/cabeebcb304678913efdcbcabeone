@@ -22,7 +22,10 @@ body {
 
 .result-container {
   background-color: rgba(255, 255, 255, 0.6);
-  width: 200px;
-  
+  max-width: 200px;
+  width: fit-content;
+  padding: 7px 15px;
+  text-align: center;
+  color: black;
 }
 /* Enter your styling here */
