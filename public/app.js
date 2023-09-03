@@ -17,8 +17,10 @@ let conditions = [
 // Function to handle player moves
 const ticTacToe = (btn, index) => {
     // Your game logic here
-    if (btn.value == "") {
+    if (cells[index] == "" && result.textContent != `Player ${currentPlayer} Won`) {
+        cells[index] = currentPlayer;
         btn.value = currentPlayer;
+        
     }
 
     /*
@@ -33,7 +35,7 @@ const ticTacToe = (btn, index) => {
     // ...
 
     // Your code to display the current player's turn
-    result.textContent = currentPlayer
+    result.textContent = `Player ${currentPlayer} Turn`;
 
     // Your code to handle button and cell interactions
     // ...
@@ -65,3 +67,6 @@ btns.forEach((btn, i) => {
 });
 
 document.querySelector('#reset').addEventListener('click', resetGame);
+
+// Initialize the game with "Player X Turn" message
+result.textContent = 'Player X Turn';
