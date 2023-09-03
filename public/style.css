@@ -21,16 +21,21 @@ body {
   text-align: center;
   font-size: 50px;
   text-shadow: 2px 2px 4px black;
+  margin-bottom: 0px;
 }
 
 .box {
   margin: 35px;
+  gap: 10px;
 }
 
 .row {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5px;
+  margin: 5px;
+
 }
 
 .btn {
@@ -74,6 +79,7 @@ body {
 
 .reset {
   margin: 10px;
+  margin-top: 25px;
 }
 
 #reset {
