@@ -20,6 +20,7 @@ body {
 #header {
   text-align: center;
   font-size: 50px;
+  text-shadow: 2px 2px 4px black;
 }
 
 .box {
@@ -46,7 +47,7 @@ body {
   font-size: 50px;
   font-weight: 500;
   color: black;
-  text-shadow: black 2px;
+  text-shadow: 2px 2px 5px black;
 
 }
 
@@ -70,8 +71,8 @@ body {
 }
 
 .result {
-  
-}
+  color: black;
+  text-shadow: 1px 2px 5px black;
 
 #reset {
   text-align: center;
