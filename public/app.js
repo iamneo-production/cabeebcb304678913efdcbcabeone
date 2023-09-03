@@ -34,6 +34,7 @@ const ticTacToe = (btn, index) => {
         result.textContent = `Player ${currentPlayer} Turn`;
     }
 
+
 };
 
 // Function to reset the game
@@ -41,6 +42,10 @@ const resetGame = () => {
     cells = ['', '', '', '', '', '', '', '', ''];
     currentPlayer = 'X';
     result.textContent = 'Player X Turn';
+    btns.forEach(btn => {
+        btn.value = '';
+        btn.disabled = false;
+    });
 };
 
 btns.forEach((btn, i) => {
