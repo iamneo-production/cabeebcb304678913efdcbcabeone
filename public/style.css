@@ -22,15 +22,27 @@ body {
   font-size: 50px;
 }
 
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: column;
+  margin: 35px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
-
-
+/* 
 .btn {
   background-color: rgba(255, 255, 255, 0.6);
   
-}
+} */
 
 .result-container {
   background-color: rgba(255, 255, 255, 0.6);
