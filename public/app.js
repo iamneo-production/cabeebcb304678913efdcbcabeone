@@ -15,11 +15,13 @@ let conditions = [
 ];
 
 // console.log(result);
-// console.log(btns);
+console.log(btns);
 // Function to handle player moves
+console.log(btns[0]);
 const ticTacToe = (element, index) => {
     for (const btn of btns) {
         console.log(btn);
+        btn.textContent = "X";
     }
 
     /*
