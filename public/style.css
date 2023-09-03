@@ -10,7 +10,11 @@ body {
     color: white;
   }
 
-
+.container {
+  display:;
+  /* justify-content: center; */
+  /* align-items:center; */
+}
 #header {
   text-align: center;
   font-size: 50px;
@@ -31,9 +35,7 @@ body {
   margin: auto;
 }
 
-#reset {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+button {
+  margin: auto;
 }
 /* Enter your styling here */
